@@ -17,15 +17,15 @@ The coronavirus disease 2019 (COVID-19) pandemic is spreading worldwide. Conside
    - The code is tested on python 3.7 and torch 1.2.0.
 
 2. Dataset
-   - Download the [Cityscapes](https://www.cityscapes-dataset.com/) dataset.
-   - Please put dataset in folder `./datasets`
+   - Download the [Covid-19](https://medicalsegmentation.com/covid19/) dataset.
+   - Please put dataset in folder `../Data/covid_19_seg/`
 
 3. Train and test
 
-   - please run:
+   - please run the following code for a quick start:
 
    - ```shell
-     CUDA_VISIBLE_DEVICES=0,1 python train.py --dataset covid_19_seg --model ffrnet --checkname exp-0804_ffrnet --backbone resnet50 --base-size 2048 --crop-size 768 --workers 1 --multi-grid --multi-dilation 4 8 16 --os 8 --aux --no-deepstem
+     CUDA_VISIBLE_DEVICES=0,1 python main.py --dataset covid_19_seg --model ffrnet --bcakbone resnet50 --checkname exp-0804_ffrnet --bath-size 8
      ```
 
 
