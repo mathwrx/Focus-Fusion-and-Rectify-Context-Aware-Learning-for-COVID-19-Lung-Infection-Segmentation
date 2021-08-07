@@ -14,7 +14,7 @@ The coronavirus disease 2019 (COVID-19) pandemic is spreading worldwide. Conside
 
 1. Install pytorch 
 
-   - The code is tested on python 3.7 and torch 1.2.0.
+   - The code is tested on python 3.7 and pytorch 1.2.0.
 
 2. Dataset
    - Download the [Covid-19](https://medicalsegmentation.com/covid19/) dataset.
