@@ -18,7 +18,7 @@ The coronavirus disease 2019 (COVID-19) pandemic is spreading worldwide. Conside
 
 2. Dataset
    - Download the [Covid-19](https://medicalsegmentation.com/covid19/) dataset.
-   - Please put dataset in folder `../data/covid_19_seg/`
+   - Please put dataset in folder `./data/covid_19_seg/`
 
 3. Train and test
 
