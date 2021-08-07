@@ -65,11 +65,11 @@ class Trainer():
                             {'params': model.af_3.parameters(), 'lr': args.lr},
                             {'params': model.af_4.parameters(), 'lr': args.lr},
                             {'params': model.head.parameters(), 'lr': args.lr * args.head_lr_factor}])
-            # params_list.extend([{'params': model.reduce_conv1.parameters(), 'lr': args.lr * args.head_lr_factor},
-            #                     {'params': model.reduce_conv2.parameters(), 'lr': args.lr * args.head_lr_factor},
-            #                     {'params': model.reduce_conv3.parameters(), 'lr': args.lr * args.head_lr_factor},
-            #                     {'params': model.reduce_conv4.parameters(), 'lr': args.lr * args.head_lr_factor},
-            #                     {'params': model.head.parameters(), 'lr': args.lr * args.head_lr_factor}])
+        #params_list.extend([{'params': model.reduce_conv1.parameters(), 'lr': args.lr * args.head_lr_factor},
+                            #{'params': model.reduce_conv2.parameters(), 'lr': args.lr * args.head_lr_factor},
+                            #{'params': model.reduce_conv3.parameters(), 'lr': args.lr * args.head_lr_factor},
+                            #{'params': model.reduce_conv4.parameters(), 'lr': args.lr * args.head_lr_factor},
+                            #{'params': model.head.parameters(), 'lr': args.lr * args.head_lr_factor}])
 
         if args.optimizer == 'sgd':
             optimizer = torch.optim.SGD(params_list, momentum=args.momentum, weight_decay=args.weight_decay,
@@ -243,7 +243,6 @@ def parse_args():
     parser.add_argument('--pooling', type=str, default='adptiveavg', choices=['max', 'adptivemax', 'adptiveavg'])
     parser.add_argument('--reduce-dim', type=int, default=128)
     parser.add_argument('--num-layers', type=int, default=1)
-    #parser.add_argument('--lstm-layers', type=int, default=1)
     parser.add_argument('--ce-weight', type=float, default=1.0)
     parser.add_argument('--weight', type=float, nargs='+', default=None)
     parser.add_argument('--dice-weight', type=float, default=1.0)
