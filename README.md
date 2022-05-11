@@ -1,4 +1,4 @@
-# Focus, Fusion and Rectify: Context-Aware Learning for COVID 19 Lung Infection Segmentation
+# Focus, Fusion and Rectify: Context-Aware Learning for COVID 19 Lung Infection Segmentation [IEEE TNNLS'21]
 
 ## Introduction
 
@@ -25,7 +25,22 @@ The coronavirus disease 2019 (COVID-19) pandemic is spreading worldwide. Conside
    - please run the following code for a quick start:
 
    - ```shell
-     CUDA_VISIBLE_DEVICES=0,1 python main.py --dataset covid_19_seg --model ffrnet --bcakbone resnet50 --checkname exp-0804_ffrnet --bath-size 8
+     CUDA_VISIBLE_DEVICES=0,1 python main.py --dataset covid_19_seg --model ffrnet --bcakbone resnet50 --bath-size 8
      ```
 
+## Reference
 
+If you consider use this code, please cite our paper:
+
+```
+@article{wang2021focus,
+  title={Focus, Fusion, and Rectify: Context-Aware Learning for COVID-19 Lung Infection Segmentation},
+  author={Wang, Ruxin and Ji, Chaojie and Zhang, Yuxiao and Li, Ye},
+  journal={IEEE Transactions on Neural Networks and Learning Systems},
+  volume={33},
+  number={1},
+  pages={12--24},
+  year={2021},
+  publisher={IEEE}
+}
+```
